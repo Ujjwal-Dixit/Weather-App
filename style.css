@@ -1,0 +1,138 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.form-container {
+  margin-bottom: 16px;
+}
+
+#weatherForm {
+  display: flex;
+}
+
+#cityInput {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#cityInput:focus {
+  outline: none;
+  border-color: #666;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #6ad16e;
+}
+
+.location {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.time,
+.current-weather,
+.temperature,
+.cloud-icon,
+.description {
+  animation: fadeInDelay 0.5s ease-in-out;
+}
+
+@keyframes fadeInDelay {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.time {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.current-weather {
+  margin-bottom: 24px;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: #555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.cloud-icon {
+  margin-bottom: 8px;
+}
+
+.cloud-icon img {
+  width: 64px;
+  height: 64px;
+}
+
+.description {
+  font-size: 24px;
+  color: #777;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
